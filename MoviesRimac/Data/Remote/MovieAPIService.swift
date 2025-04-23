@@ -19,10 +19,11 @@ enum APError: Error {
 class MovieAPIService: NSObject {
     static let shared = MovieAPIService()
     
+    
     private func buildUpcomingURL(for page: Int) -> URL? {
-        var components = URLComponents(string: "https://api.themoviedb.org/3/movie/upcoming")
+        var components = URLComponents(string: "\(AppConfig.shared.apiBaseURL)/movie/upcoming")
         components?.queryItems = [
-            URLQueryItem(name: "api_key", value: "aa4744316eaa05281834b7de997b8405"),
+            URLQueryItem(name: "api_key", value: "\(AppConfig.shared.apiKey)"),
             URLQueryItem(name: "language", value: "es-PE"),
             URLQueryItem(name: "page", value: "\(page)")
         ]
@@ -37,7 +38,7 @@ class MovieAPIService: NSObject {
             return
         }
 
-        
+        print("🌐 Final URL: \(url.absoluteString)")
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
            if let _ = error {

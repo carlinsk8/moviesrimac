@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		07C5CCF02DB9221D0044E46E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 07C5CCEF2DB9221D0044E46E /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		07C5CCA32DB8A7FB0044E46E /* MoviesRimac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesRimac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		07C5CD082DB93A7E0044E46E /* Exceptions for "MoviesRimac" folder in "MoviesRimac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 07C5CCA22DB8A7FB0044E46E /* MoviesRimac */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		07C5CCA52DB8A7FB0044E46E /* MoviesRimac */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				07C5CD082DB93A7E0044E46E /* Exceptions for "MoviesRimac" folder in "MoviesRimac" target */,
+			);
 			path = MoviesRimac;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C5CCF02DB9221D0044E46E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = MoviesRimac;
 			packageProductDependencies = (
+				07C5CCEF2DB9221D0044E46E /* Kingfisher */,
 			);
 			productName = MoviesRimac;
 			productReference = 07C5CCA32DB8A7FB0044E46E /* MoviesRimac.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 07C5CC9A2DB8A7FB0044E46E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				07C5CCEE2DB9221D0044E46E /* XCRemoteSwiftPackageReference "KingFisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 07C5CCA42DB8A7FB0044E46E /* Products */;
 			projectDirPath = "";
@@ -253,6 +275,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviesRimac/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,6 +303,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoviesRimac/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07C5CCEE2DB9221D0044E46E /* XCRemoteSwiftPackageReference "KingFisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/KingFisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07C5CCEF2DB9221D0044E46E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07C5CCEE2DB9221D0044E46E /* XCRemoteSwiftPackageReference "KingFisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07C5CC9B2DB8A7FB0044E46E /* Project object */;
 }

@@ -10,4 +10,5 @@ struct Movie {
     let overview: String
     let releaseDate: String
     let posterPath: String
+    let voteAverage: Double
 }

@@ -23,6 +23,7 @@ class MovieRepositoryImpl: MovieRepository {
                     guard let id = data.id,
                           let title = data.title ?? data.original_title,
                           let overview = data.overview,
+                          let voteAverage = data.vote_average,
                           let releaseDate = data.release_date,
                           let posterPath = data.poster_path else {
                         return nil
@@ -33,7 +34,8 @@ class MovieRepositoryImpl: MovieRepository {
                         title: title,
                         overview: overview,
                         releaseDate: releaseDate,
-                        posterPath: posterPath
+                        posterPath: posterPath,
+                        voteAverage: voteAverage
                     )
                 }
                 completion(.success(movies))
