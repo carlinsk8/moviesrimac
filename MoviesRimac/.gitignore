@@ -1,0 +1,24 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Archivos de entorno 
+Resources/Environment.plist
+
+# Archivos de depuración o conflictos
+*.log
+*.orig
+*.swp
+*.swo

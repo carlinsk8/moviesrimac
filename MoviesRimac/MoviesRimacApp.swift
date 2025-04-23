@@ -11,7 +11,14 @@ import SwiftUI
 struct MoviesRimacApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MoviesView(
+                viewModel: MoviesViewModel(
+                    fetchUpcoming: FetchUpcomingMoviesUseCase(
+                        repository: MovieRepositoryImpl()
+                    )
+                )
+            )
         }
     }
 }
+
